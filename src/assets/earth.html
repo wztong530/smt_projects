@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+<body>
+
+<a-scene>
+
+	<a-camera position='0 0 3' user-height='0'></a-camera>
+	
+	<a-sphere src="img/earth_atmos_4096.jpg" radius="1.8" segments-height="50"> 
+		<a-animation
+		dur="20000"
+		fill= "forwards"
+		to="0 360 0"
+		easing="linear"
+		repeat="indefinite"></a-animation>
+	</a-sphere>
+	<a-sky segments-height="10" segments-width="100" color="#000" rotation="0 0 0"></a-sky>
+	
+</a-scene>
+
+<script src='js/aframe.min.js'></script>
+</body>
+</html>
